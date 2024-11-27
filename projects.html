@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projetos de João Vitor Roventini - Desenvolvedor">
+    <title>Projetos | João Vitor Roventini</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Botão Dark Mode -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">JV Roventini</a>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="about.html" class="nav-link">Sobre</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projetos</a></li>
+                    <li><a href="contact.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="projects-page">
+        <section class="projects-section">
+            <div class="container">
+                <h1 class="section-title">Meus Projetos</h1>
+                
+                <!-- Filtros -->
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="Python">Python</button>
+                    <button class="filter-btn" data-filter="HTML">Web</button>
+                    <button class="filter-btn" data-filter="C">C</button>
+                </div>
+
+                <!-- Grid de Projetos -->
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Os projetos serão carregados aqui via JavaScript -->
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <span>Carregando projetos...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 João Vitor Roventini. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+</html> 

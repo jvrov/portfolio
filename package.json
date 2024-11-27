@@ -1,0 +1,28 @@
+{
+    "name": "portfolio-jvroventini",
+    "version": "1.0.0",
+    "description": "Portfolio pessoal de João Vitor Roventini",
+    "source": "src/index.html",
+    "scripts": {
+        "start": "parcel src/*.html --open",
+        "build": "parcel build src/*.html --public-url ./",
+        "clean": "rm -rf dist/ .parcel-cache/",
+        "dev": "npm run clean && npm run start"
+    },
+    "author": "João Vitor Roventini",
+    "license": "MIT",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.5.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.17",
+        "parcel": "^2.11.0",
+        "postcss": "^8.4.35",
+        "postcss-nested": "^6.0.1"
+    },
+    "browserslist": [
+        "last 2 versions",
+        "> 0.5%",
+        "not dead"
+    ]
+} 

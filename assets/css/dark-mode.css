@@ -1,0 +1,48 @@
+/* Variáveis para o tema escuro */
+:root[data-theme="dark"] {
+    --primary-color: #818cf8;
+    --secondary-color: #6366f1;
+    --accent-color: #4f46e5;
+    --text-color: #e5e7eb;
+    --text-light: #9ca3af;
+    --bg-color: #111827;
+    --bg-secondary: #1f2937;
+}
+
+.dark-mode {
+    --primary-color: #818cf8;
+    --secondary-color: #6366f1;
+    --accent-color: #4f46e5;
+    --text-color: #e5e7eb;
+    --text-light: #9ca3af;
+    --bg-color: #111827;
+    --bg-secondary: #1f2937;
+}
+
+/* Ajustes específicos para o modo escuro */
+.dark-mode body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dark-mode .header {
+    background-color: rgba(17, 24, 39, 0.95);
+}
+
+.dark-mode .card {
+    background-color: var(--bg-secondary);
+}
+
+.dark-mode .nav-link {
+    color: var(--text-color);
+}
+
+.dark-mode .btn.secondary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.dark-mode .btn.secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}

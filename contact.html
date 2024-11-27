@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contato - João Vitor Roventini">
+    <title>Contato | João Vitor Roventini</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Botão Dark Mode -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">JV Roventini</a>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="about.html" class="nav-link">Sobre</a></li>
+                    <li><a href="projects.html" class="nav-link">Projetos</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-section">
+            <div class="container">
+                <h1 class="section-title">Vamos Conversar!</h1>
+                
+                <!-- Cards de Contato atualizados -->
+                <div class="contact-cards">
+                    <a href="mailto:jv.roventini@gmail.com" class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>jv.roventini@gmail.com</p>
+                    </a>
+
+                    <a href="https://github.com/jvrov" target="_blank" class="contact-card">
+                        <div class="card-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>@jvrov</p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/joão-vitor-roventini-61660822a/" target="_blank" class="contact-card">
+                        <div class="card-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>João Vitor Roventini</p>
+                    </a>
+                </div>
+
+                <!-- Formulário atualizado para enviar para seu email -->
+                <div class="contact-form-container">
+                    <h2>Envie uma mensagem</h2>
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/jv.roventini@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required 
+                                placeholder="Seu nome completo"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                placeholder="seu.email@exemplo.com"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                required 
+                                placeholder="Sua mensagem aqui..."
+                                rows="5"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/jvrov" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/joão-vitor-roventini-61660822a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 João Vitor Roventini. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html> 
